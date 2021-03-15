@@ -2,9 +2,16 @@ plugins {
     id 'com.android.application'
 }
 
+//def apikeyPropertiesFile = rootProject.file("apikey.properties")
+//def apikeyProperties = new Properties()
+//apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
+
 android {
     compileSdkVersion 29
-
+    buildToolsVersion "30.0.2"
+    buildFeatures {
+        dataBinding true
+    }
     defaultConfig {
         applicationId "com.codepath.simpleinstagram"
         minSdkVersion 21
@@ -13,6 +20,9 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        // should correspond to key/value pairs inside the file
+        //buildConfigField("String", "app_id", apikeyProperties['app_id'])
+        //buildConfigField("String", "client_key", apikeyProperties['client_key'])
     }
 
     buildTypes {
@@ -35,4 +45,8 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    //
+    implementation 'com.parse.bolts:bolts-android:1.4.0'
+    implementation 'com.github.parse-community.Parse-SDK-Android:parse:1.25.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.1' // for logging API calls to LogCat
 }
