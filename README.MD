@@ -9,22 +9,30 @@ Time spent:
 ## User Stories
 
 The following **required** functionality is completed:
+
 **Part 1**
+
 - [x] User can sign up to create a new account using Parse authentication.
 - [x] User can log in and log out of his or her account.
 - [x] The current signed in user is persisted across app restarts.
 - [x] User can take a photo, add a caption, and post it to "Instagram".
+
 **Part 2**
+
 - [x] User can view the last 20 posts submitted to "Instagram".
 - [x] The user should switch between different tabs - viewing all posts (feed view), compose (capture photos form camera) and profile tabs (posts made) using fragments and a Bottom Navigation View. (2 points)
 - [x] User can pull to refresh the last 20 posts submitted to "Instagram".
 
 The following **optional** features are implemented:
+
 **Part 1**
+
 - [x] User sees app icon in home screen and styled bottom navigation view
 - [x] Style the feed to look like the real Instagram feed.
 - [ ] After the user submits a new post, show an indeterminate progress bar while the post is being uploaded to Parse.
+
 **Part 2**
+
 - [x] User sees app icon in home screen and styled bottom navigation view
 - [x] Style the feed to look like the real Instagram feed.
 - [ ] User can load more posts once he or she reaches the bottom of the feed using infinite scrolling.
@@ -46,9 +54,11 @@ The following **additional** features are implemented:
 Here's a walkthrough of implemented user stories:
 
 **Part 1**
+
 <img src='https://github.com/Jamswhat2/SimpleInstagram/blob/master/SimpleInstagram_part1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 **Part 2**
+
 <img src='https://github.com/Jamswhat2/SimpleInstagram/blob/master/SimpleInstagram_part2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
