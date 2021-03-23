@@ -10,4 +10,5 @@
     <string name="todo">TODO</string>
     <string name="Description">Description</string>
     <string name="logout">LOGOUT</string>
+    <string name="profileimage">profileImage</string>
 </resources>

@@ -28,6 +28,21 @@
             android:src="@drawable/nav_logo_whiteout"
             app:tint="@android:color/black" />
 
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            app:backgroundTint="#FFFFFF"
+            android:background="#C6C6C6"
+            android:text="@string/logout"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textColor="#F40202" />
+
+        <!--
         <ImageView
             android:id="@+id/nav"
             android:layout_width="35dp"
@@ -38,8 +53,6 @@
             android:backgroundTint="@color/black"
             android:src="@drawable/nav_inbox_paper_plane"
             app:tint="@android:color/black" />
-
-
         <EditText
             android:id="@+id/etDescription"
             android:layout_width="350dp"
@@ -82,9 +95,9 @@
             android:background="#C6C6C6"
             android:text="@string/submit"
             android:textColor="@color/black"
-            app:backgroundTint="#C6C6C6" />
+            app:backgroundTint="#C6C6C6" /> -->
 
-        <LinearLayout
+        <!--<LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -119,6 +132,23 @@
                 android:layout_weight="1"/>
 
 
-        </LinearLayout>
+        </LinearLayout> -->
+        <FrameLayout
+            android:id="@+id/flContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/logo"
+            android:layout_above="@+id/bottomNavigation">
+
+        </FrameLayout>
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            app:itemIconTint="@color/black"
+            app:itemTextColor="@color/black"
+            app:menu="@menu/menu_bottom_navigation" />
     </RelativeLayout>
 </layout>
